@@ -1,0 +1,268 @@
+/* toggle light dark */
+section,
+.bgPointLight,
+.bgPointNight,
+.sun,
+.moon,
+.cloud1,
+.cloud2,
+.windowDark,
+.starsPoints,
+.shadow,
+#start .text .square::after,
+#skills .containerSkills,
+.ciao,
+.myName,
+.contact,
+.title,
+.title::after,
+.containerProjects,
+.projectBtn button,
+#contact .containerContact .cartoon .faceNight,
+#contact .containerContact .cartoon .faceLight,
+#contact .containerContact .textMessage #contactForm input,
+#contact .containerContact .textMessage #contactForm textarea,
+.containerContact,
+.textMessage,
+.subtitle,
+#contact .containerContact .cartoon .backgroundNight,
+.textProject .subtitle,
+.textProject p,
+#contact .containerContact .textMessage p,
+.bgPoint {
+    transition: all 1s ease-in-out !important;
+}
+
+/* light mode */
+.light-mode section,
+.light-mode .square::after {
+    background-color: #5E809F !important;
+}
+
+.light-mode .sideMenu .sideMenuList a,
+.light-mode header .menu .light-mode .contact {
+    background-color: #211D2E;
+}
+
+.light-mode #contact .containerContact .textMessage #contactForm input,
+.light-mode #contact .containerContact .textMessage #contactForm textarea {
+    background-color: #735DE0;
+}
+
+.light-mode #contact .containerContact .textMessage {
+    color: black !important;
+}
+
+.light-mode #contact .containerContact .cartoon .backgroundNight,
+.light-mode .windowDark,
+.light-mode .shadow,
+.light-mode #contact .containerContact .cartoon .faceNight,
+.light-mode .faceNight {
+    opacity: 0 !important;
+}
+
+.light-mode .containerContact, .light-mode  .containerSkills {
+    background-color: white !important;
+}
+
+.light-mode .faceLight,
+.light-mode #contact .containerContact .cartoon .faceLight {
+    opacity: 1 !important;
+}
+
+.light-mode .ciao,
+.light-mode .myName,
+.light-mode .title,
+.light-mode .textProject .subtitle,
+.light-mode .textProject p {
+    color: #211D2E !important;
+}
+
+.light-mode .projectBtn button {
+    background-color: #735DE0 !important;
+    color: white !important;
+}
+
+.light-mode .bgPointNight {
+    opacity: 1 !important;
+    z-index: 3 !important;
+}
+
+.light-mode .sun {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.light-mode .starsPoints {
+    opacity: 0 !important;
+}
+
+.light-mode .moon {
+    transform: translateX(0px);
+}
+
+.light-mode .cloud1 {
+    opacity: 1;
+    animation: moveCloud 20s linear infinite;
+}
+
+.light-mode .cloud2 {
+    opacity: 1;
+    animation: moveCloud 15s linear infinite;
+}
+
+.light-mode .title::after {
+    background: #735DE0 !important;
+}
+
+.light-mode header .menu .contact {
+    background-color: #C4DEF5;
+    color: black;
+}
+
+.light-mode .sideMenu .sideMenuList .homeBtn {
+    background-image: url("../img/btnhomelight.svg");
+}
+
+.light-mode .sideMenu .sideMenuList .aboutBtn {
+    background-image: url("../img/btnaboutlight.svg");
+    animation-delay: 1s;
+}
+
+.light-mode .sideMenu .sideMenuList .skillsBtn {
+    background-image: url("../img/btnskillslight.svg");
+    animation-delay: 2s;
+}
+
+.light-mode .sideMenu .sideMenuList .projectBtn {
+    background-image: url("../img/btnprojectlight.svg");
+}
+
+.light-mode .sideMenu .sideMenuList .contactBtn {
+    background-image: url("../img/btnwhatsapplight.svg");
+}
+.light-mode #contact .containerContact .textMessage p {
+    color: #211D2E !important;
+}
+/* dark mode */
+.dark-mode #contact .containerContact .textMessage #contactForm input,
+.dark-mode #contact .containerContact .textMessage #contactForm textarea,
+.dark-mode .square::after,
+.dark-mode section {
+    background-color: #1A375C !important;
+}
+
+.dark-mode #contact .containerContact .textMessage .subtitle {
+    color: #1A375C;
+}
+
+.dark-mode #contact .containerContact .cartoon .backgroundNight,
+.dark-mode #contact .containerContact .cartoon .faceNight,
+.dark-mode .windowDark,
+.dark-mode .shadow {
+    opacity: 1 !important;
+}
+
+.dark-mode .containerContact, .light-mode .containerSkills {
+    background-color: #735DE0 !important;
+}
+
+.dark-mode #contact .containerContact .textMessage {
+    color: white !important;
+}
+
+.dark-mode .sideMenu .sideMenuList a {
+    background-color: white;
+}
+
+
+.dark-mode .projectBtn button {
+    background-color: white !important;
+    color: #1A375C !important;
+}
+
+.dark-mode .title::after {
+    background: #1A375C !important;
+}
+
+.dark-mode .ciao,
+.dark-mode .myName,
+.dark-mode .title {
+    color: #735DE0 !important;
+}
+
+.dark-mode .textProject .subtitle,
+.dark-mode .textProject p {
+    color: white !important;
+}
+
+.dark-mode .containerProjects {
+    background-color: #735DE0 !important;
+}
+
+.dark-mode .sun {
+    transform: translateX(250px);
+}
+
+.dark-mode .starsPoints {
+    opacity: 1 !important;
+    transition-delay: 1.5s;
+}
+
+.dark-mode .moon {
+    transform: translateX(250px);
+}
+
+.dark-mode .cloud1,
+.dark-mode .cloud2 {
+    opacity: 0;
+}
+
+.dark-mode .sideMenu .sideMenuList .homeBtn {
+    background-image: url("../img/btnhomenight.svg");
+}
+
+.dark-mode .sideMenu .sideMenuList .aboutBtn {
+    background-image: url("../img/btnaboutnight.svg");
+    animation-delay: 1s;
+}
+
+.dark-mode .sideMenu .sideMenuList .skillsBtn {
+    background-image: url("../img/btnskillsnight.svg");
+    animation-delay: 2s;
+}
+
+.dark-mode .sideMenu .sideMenuList .projectBtn {
+    background-image: url("../img/btnprojectnight.svg");
+}
+
+.dark-mode .sideMenu .sideMenuList .contactBtn {
+    background-image: url("../img/btnwhatsappnight.svg");
+}
+
+.dark-mode #contact .containerContact .textMessage p {
+    color: white !important;
+}
+/* toggle mode */
+
+#toggleMode {
+    position: absolute;
+    right: 40px;
+    bottom: 50%;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

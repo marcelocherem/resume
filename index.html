@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/darkmode.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Marcelo Cherem</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <div class="dayNightBtn">
+                <label class="switch">
+                    <input type="checkbox" id="toggleMode">
+                    <span class="slider">
+                        <div class="icon sunIcon">
+                            <div class="sunIntern"></div>
+                            <div class="sunSpace"></div>
+                            <div class="sunRays">
+                                <div class="sunRay sunRay1"></div>
+                                <div class="sunRay sunRay2"></div>
+                                <div class="sunRay sunRay3"></div>
+                                <div class="sunRay sunRay4"></div>
+                            </div>
+                        </div>
+                        <div class="icon moonIcon">
+                            <div class="fullMoon"></div>
+                            <div class="negativeMoon"></div>
+                        </div>
+                    </span>
+                </label>
+            </div>
+            <ul class="menuList">
+                <a class="selected" href="">
+                    <li>Home</li>
+                </a>
+                <a href="#about">
+                    <li>Chi sono</li>
+                </a>
+                <a href="#skills">
+                    <li>Competenze</li>
+                </a>
+                <a href="#project">
+                    <li>Proggetti</li>
+                </a>
+                <a href="#contact" class="contact">
+                    <li>Contattami</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+    <div class="sideMenu">
+        <button class="sideMenuToggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+        <ul class="sideMenuList">
+            <li><a href="#start" class="homeBtn" data-section="start"></a></li>
+            <li><a href="#about" class="aboutBtn" data-section="about"></a></li>
+            <li><a href="#skills" class="skillsBtn" data-section="skills"></a></li>
+            <li><a href="#project" class="projectBtn" data-section="project"></a></li>
+            <li><a href="#contact" class="contactBtn" data-section="contact"></a></li>
+        </ul>
+    </div>
+    <section id="start">
+        <div class="cartoon">
+            <div class="shadow"></div>
+            <img src="assets/img/cartoon/bodylight.svg" alt="" class="bgPoint bgPointLight">
+            <img src="assets/img/cartoon/bodydark.svg" alt="" class="bgPoint bgPointNight">
+            <img src="assets/img/cartoon/facelight.svg" alt="" class="faceLight">
+            <img src="assets/img/cartoon/facenight.svg" alt="" class="faceNight">
+            <div class="eyes">
+                <div class="eye eye1"></div>
+                <div class="eye eye2"></div>
+            </div>
+            <div class="window">
+                <div class="windowDark"></div>
+                <div class="windowBg">
+                    <!-- sun -->
+                    <img src="assets/img/window/sun.svg" alt="" class="sun">
+                    <!-- stars -->
+                    <div class="starsPoints">
+                        <img src="assets/img/window/stars.svg" alt="" class="stars">
+                        <img src="assets/img/window/star2.svg" alt="" class="star star2">
+                        <img src="assets/img/window/star1.svg" alt="" class="star star1">
+                        <img src="assets/img/window/star3.svg" alt="" class="star star3">
+                        <img src="assets/img/window/star4.svg" alt="" class="star star4">
+                    </div>
+                    <!-- moon -->
+                    <div class="moon">
+                        <img src="assets/img/window/moon.svg" alt="" class="moonInside">
+                        <img src="assets/img/window/out moon.svg" alt="" class="moonOutside">
+                    </div>
+                    <!-- clouds -->
+                    <img src="assets/img/window/cloud1.svg" alt="" class="cloud1">
+                    <img src="assets/img/window/cloud2.svg" alt="" class="cloud2">
+                </div>
+            </div>
+        </div>
+        <!-- text -->
+        <div class="text">
+            <div class="square"></div>
+            <div class="hello">
+                <h3 class="ciao">Ciao!</h3>
+            </div>
+            <div class="name">
+                <h1>Io sono</h1>
+                <h2 class="myName">Marcelo Lisboa</h2>
+            </div>
+            <h3 class="jobTitle">Full Stack Web Developer</h3>
+        </div>
+    </section>
+    <section id="about">
+        <div class="textAbout">
+            <h1 class="title">About Me</h1>
+            <p>Quasi 10 anni di esperienza nel design creativo, pubblicità e marketing, ho deciso di ampliare le mie
+                conoscenze nel settore che è sempre stata la mia grande passione: lo sviluppo web. Con la combinazione
+                delle competenze e delle pratiche acquisite nel tempo e il costante desiderio di apprendere, sto
+                cercando un'opportunità di lavoro per applicare tutta la mia tecnica e l'esperienza precedente in questo
+                ambiente stimolante.</p>
+        </div>
+        <div class="img"></div>
+    </section>
+
+    <section id="skills">
+        <h1 class="title">Skills</h1>
+        <div class="containerSkills">
+            <div class="bubbleGroup">
+                <div class="bubble">HTML</div>
+                <div class="bubble">CSS</div>
+                <div class="bubble">REACT</div>
+                <div class="bubble">JavaScript</div>
+                <div class="bubble">Wordpress</div>
+            </div>
+            <div class="bubbleGroup">
+                <div class="bubble">JSX</div>
+                <div class="bubble">jQuery</div>
+                <div class="bubble">Bootstrap</div>
+                <div class="bubble">ES6</div>
+                <div class="bubble">GIT</div>
+            </div>
+            <div class="bubbleGroup">
+                <div class="bubble">PHP</div>
+                <div class="bubble">PostgreSQL</div>
+                <div class="bubble">Express.js</div>
+                <div class="bubble">MySQL</div>
+                <div class="bubble">Node.js</div>
+            </div>
+        </div>
+    </section>
+    <section id="project">
+        <h1 class="title">I Miei Progetti</h1>
+        <!-- COOL GLASSES -->
+        <div class="containerProjects coolGlasses">
+            <div class="template">
+                <img src="assets/img/templates/web.svg" alt="" class="backgroundTemplate">
+                <img src="assets/img/templates/macTemplate.svg" alt="" class="device">
+                <video autoplay loop muted playsinline>
+                    <source src="assets/vid/cool glasses.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="textProject">
+                <h1 class="subtitle">Ecommerce Cool Glasses</h1>
+                <p>Progetto realizzato per la conclusione del corso con esempi di PHP, MySQL, Bootstrap, HTML,
+                    JavaScript e CSS</p>
+                <div class="projectBtn">
+                    <button>Vedi sito</button>
+                    <button>Vedi codice</button>
+                </div>
+            </div>
+        </div>
+        <!-- PROGETTO SCORTA -->
+        <div class="containerProjects containerReverse progettoScorta">
+            <div class="template">
+                <img src="assets/img/templates/scorta.svg" alt="" class="backgroundTemplate">
+                <video autoplay loop muted playsinline>
+                    <source src="assets/vid/progettoScorta.mp4" type="video/mp4">
+                </video>
+                <img src="assets/img/templates/Phone.svg" alt="" class="device">
+            </div>
+            <div class="textProject">
+                <h1 class="subtitle">Gestione degli stock</h1>
+                <p>Progetto per ottimizzare la gestione degli ordini e delle scorte di un ristorante. Inizialmente
+                    sviluppato con HTML, JavaScript e CSS, è stato poi riscritto in PHP e MySQL. L'ultima versione, ora
+                    in produzione, utilizza React, Node.js e PostgreSQL.</p>
+                <div class="projectBtn">
+                    <button>Vedi sito</button>
+                    <button>Vedi codice</button>
+                </div>
+            </div>
+        </div>
+        <!-- login -->
+        <div class="containerProjects loginPage">
+            <div class="template">
+                <img src="assets/img/templates/goin.svg" alt="" class="backgroundTemplate">
+                <video autoplay loop muted playsinline>
+                    <source src="assets/vid/login register.mp4" type="video/mp4">
+                </video>
+                <img src="assets/img/templates/tabletDown.svg" alt="" class="device">
+            </div>
+            <div class="textProject">
+                <h1 class="subtitle">Login / Register</h1>
+                <p>Uno dei miei primi progetti realizzati con HTML, CSS e JavaScript in modo semplice, con reazioni ai
+                    clic.</p>
+                <div class="projectBtn">
+                    <button>Vedi sito</button>
+                    <button>Vedi codice</button>
+                </div>
+            </div>
+        </div>
+        <!-- TO DO LIST -->
+        <div class="containerProjects containerReverse toDoList">
+            <div class="template">
+                <img src="assets/img/templates/check.svg" alt="" class="backgroundTemplate">
+                <video autoplay loop muted playsinline>
+                    <source src="assets/vid/todo list.mp4" type="video/mp4">
+                </video>
+                <img src="assets/img/templates/tabletUp.svg" alt="" class="device">
+            </div>
+            <div class="textProject">
+                <h1 class="subtitle">TO DO LIST</h1>
+                <p>To-Do List è un'applicazione web per gestire attività quotidiane. Permette di aggiungere, completare,
+                    eliminare e riordinare i task. Utilizza HTML, CSS e JavaScript, con manipolazione del DOM per
+                    aggiornamenti dinamici.</p>
+                <div class="projectBtn">
+                    <button>Vedi sito</button>
+                    <button>Vedi codice</button>
+                </div>
+            </div>
+        </div>
+        <!-- Drum Kit -->
+        <div class="containerProjects drumKit">
+            <div class="template">
+                <img src="assets/img/templates/music.svg" alt="" class="backgroundTemplate">
+                <img src="assets/img/drumKit.png" alt="" class="drumKitImg">
+                <img src="assets/img/templates/tabletDown.svg" alt="" class="device">
+            </div>
+            <div class="textProject">
+                <h1 class="subtitle">Drum Kit</h1>
+                <p>Progetto di applicazione JavaScript per il feedback quando si clicca con il mouse o si premono tasti
+                    specifici, con risposta sonora.</p>
+                <div class="projectBtn">
+                    <button>Vedi sito</button>
+                    <button>Vedi codice</button>
+                </div>
+            </div>
+        </div>
+        <!-- Numerology -->
+        <div class="containerProjects containerReverse numerology">
+            <div class="template">
+                <img src="assets/img/templates/numerology.svg" alt="" class="backgroundTemplate">
+                <video autoplay loop muted playsinline>
+                    <source src="assets/vid/numerology.mp4" type="video/mp4">
+                </video>
+                <img src="assets/img/templates/tabletUp.svg" alt="" class="device">
+            </div>
+            <div class="textProject">
+                <h1 class="subtitle">Numerology</h1>
+                <p>Progetto in HTML, CSS e JavaScript, sviluppato su richiesta di un cliente. Utilizza array e funzioni
+                    per analizzare nome e cognome, restituendo un'interpretazione numerologica.</p>
+                <div class="projectBtn">
+                    <button>Vedi sito</button>
+                    <button>Vedi codice</button>
+                </div>
+            </div>
+        </div>
+        <!-- Tic Tac Toe -->
+        <div class="containerProjects tris">
+            <div class="template">
+                <img src="assets/img/templates/tris.svg" alt="" class="backgroundTemplate">
+                <video autoplay loop muted playsinline>
+                    <source src="assets/vid/tris.mp4" type="video/mp4">
+                </video>
+                <img src="assets/img/templates/tabletDown.svg" alt="" class="device">
+            </div>
+            <div class="textProject">
+                <h1 class="subtitle">Tris</h1>
+                <p>Giocco in HTML, CSS e JavaScript. Il famoso gioco Tic-Tac-Toe, gestendo le mosse dei giocatori e
+                    verificando le condizioni di vittoria.</p>
+                <div class="projectBtn">
+                    <button>Vedi sito</button>
+                    <button>Vedi codice</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="containerContact">
+            <div class="textMessage">
+                <h1 class="subtitle">Parliamone!</h1>
+                <p>Contattatemi via email o WhatsApp! Sarò felice di organizzare un incontro per discutere opportunità
+                    di lavoro.</p>
+                <form id="contactForm">
+                    <label for="name">Il tuo nome:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">La tua mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Il tuo messagio:</label>
+                    <textarea id="message" name="message" placeholder="Scrivi qui il tuo messagio..."
+                        required></textarea>
+                    <div class="buttonGroup">
+                        <button type="button" onclick="sendWhatsApp()">
+                            <img src="assets/img/whatsapp.svg" alt="" class="icon">
+                            <p class="whatsappText">
+                                Invia su WhatsApp
+                            </p>
+                        </button>
+                        <button type="button" onclick="sendEmail()">
+                            <img src="assets/img/mail.png" alt="" class="icon">
+                            <p class="mailText">
+                                Invia una mail
+                            </p>
+                        </button>
+                    </div>
+                </form>
+            </div>
+                <div class="cartoon">
+                    <img src="assets/img/cartoon/bgcontactlight.svg" alt="" class="backgroundLight">
+                    <img src="assets/img/cartoon/bgcontactnight.svg" alt="" class="backgroundNight">
+                    <img src="assets/img/cartoon/facelight.svg" alt="" class="faceLight">
+                    <img src="assets/img/cartoon/facelight.svg" alt="" class="faceNight">
+                    <div class="eyesContact">
+                        <div class="eyeContact eye1"></div>
+                        <div class="eyeContact eye2"></div>
+                    </div>
+                    <img src="assets/img/cartoon/bodycontact.svg" alt="" class="table">
+                </div>
+        </div>
+    </section>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
