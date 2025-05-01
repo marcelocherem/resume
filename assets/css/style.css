@@ -410,7 +410,8 @@ section {
     bottom: 0;
     background-color: black;
     border-radius: 100%;
-    animation: blink 5s ease-in-out infinite;
+    animation: blink 2s ease-in-out infinite;
+
 }
 
 #start .cartoon .eye2 {
@@ -423,7 +424,7 @@ section {
         bottom: 0;
     }
 
-    47% {
+    27% {
         height: 20px;
         bottom: 0;
     }
@@ -433,7 +434,7 @@ section {
         bottom: 10px;
     }
 
-    53% {
+    73% {
         height: 20px;
         bottom: 0;
     }
@@ -793,6 +794,10 @@ section {
     #start .text .jobTitle {
         font-size: 2rem;
     }
+
+    #start .cartoon .eye {
+        animation: reading 20s ease-in-out infinite;
+    }
 }
 
 @media (max-width:765px) {
@@ -905,6 +910,16 @@ section {
     }
 }
 
+@media (max-width: 290px) {
+    #start .text .name {
+
+        h1,
+        h2 {
+            font-size: 1.3rem;
+        }
+    }
+}
+
 /* about */
 #about {
     position: relative;
@@ -919,6 +934,9 @@ section {
     transition: transform 0.3s ease-out;
     border: 1px solid white;
     border-radius: 50px;
+    opacity: 0;
+    transform: translateY(150px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 #about .textAbout .title {
@@ -1383,6 +1401,18 @@ section {
     }
 }
 
+@keyframes floatBubbleSmall {
+
+    0%,
+    100% {
+        transform: translate(var(--translate-x), var(--translate-y)) translateY(0);
+    }
+
+    50% {
+        transform: translate(var(--translate-x), var(--translate-y)) translateY(-5px);
+    }
+}
+
 @media (max-width: 1515px) {
     #skills {
         height: auto
@@ -1436,6 +1466,7 @@ section {
         font-size: 2.5rem;
     }
 }
+
 @media (max-width: 950px) {
     #skills .containerSkills {
         height: 350px;
@@ -1457,18 +1488,94 @@ section {
     #skills .containerSkills {
         flex-direction: column;
         height: 1370px;
-
+    }
+    #skills .containerSkills .bubbleGroup:first-child {
+        margin-top: 20px;
     }
 
-    @media (max-width: 720px) {
-        #skills .bubble {
-            transform: translateY(var(--translate-x)) translateX(var(--translate-y)) !important;
-            width: calc(var(--bubble-width));
-            height: calc(var(--bubble-height));
-            font-size: 1.2rem;
-        }
+    #skills .bubble {
+        /* transform: translateY(var(--translate-x)) translateX(var(--translate-y)) !important; */
+        width: calc(var(--bubble-width));
+        height: calc(var(--bubble-height));
+        font-size: 1.2rem;
+    }
+
+    #skills .bubbleGroup:nth-child(1) .bubble:nth-child(1) {
+        --translate-x: -123%;
+        --translate-y: -15%;
+    }
+
+    #skills .bubbleGroup:nth-child(1) .bubble:nth-child(2) {
+        --translate-x: 110%;
+        --translate-y: -70%;
+    }
+
+    #skills .bubbleGroup:nth-child(1) .bubble:nth-child(3) {
+        --translate-x: -30%;
+        --translate-y: -66%;
+    }
+
+    #skills .bubbleGroup:nth-child(1) .bubble:nth-child(4) {
+        --translate-x: -35%;
+        --translate-y: 50%;
+    }
+
+    #skills .bubbleGroup:nth-child(1) .bubble:nth-child(5) {
+        --translate-x: 25%;
+        --translate-y: 0%;
+    }
+
+    #skills .bubbleGroup:nth-child(2) .bubble:nth-child(1) {
+        --translate-x: -115%;
+        --translate-y: -60%;
+    }
+
+    #skills .bubbleGroup:nth-child(2) .bubble:nth-child(2) {
+        --translate-x: -75%;
+        --translate-y: 35%;
+    }
+
+    #skills .bubbleGroup:nth-child(2) .bubble:nth-child(3) {
+        --translate-x: 0%;
+        --translate-y: -30%;
+    }
+
+    #skills .bubbleGroup:nth-child(2) .bubble:nth-child(4) {
+        --translate-x: 25%;
+        --translate-y: 70%;
+    }
+
+    #skills .bubbleGroup:nth-child(2) .bubble:nth-child(5) {
+        --translate-x: 90%;
+        --translate-y: -10%;
+    }
+
+    #skills .bubbleGroup:nth-child(3) .bubble:nth-child(1) {
+        --translate-x: -95%;
+        --translate-y: 20%;
+    }
+
+    #skills .bubbleGroup:nth-child(3) .bubble:nth-child(2) {
+        --translate-x: -35%;
+        --translate-y: -60%;
+    }
+
+    #skills .bubbleGroup:nth-child(3) .bubble:nth-child(3) {
+        --translate-x: -10%;
+        --translate-y: 45%;
+    }
+
+    #skills .bubbleGroup:nth-child(3) .bubble:nth-child(4) {
+        --translate-x: 40%;
+        --translate-y: -35%;
+    }
+
+    #skills .bubbleGroup:nth-child(3) .bubble:nth-child(5) {
+        --translate-x: 90%;
+        --translate-y: 35%;
     }
 }
+
 
 @media (max-width: 620px) {
     #skills .containerSkills {
@@ -1535,6 +1642,7 @@ section {
         width: calc(var(--bubble-width) * 0.4);
         height: calc(var(--bubble-height) * 0.4);
         font-size: 0.9rem;
+        animation: floatBubbleSmall 5s infinite ease-in-out;
     }
 }
 
@@ -1983,6 +2091,7 @@ section {
     #project .containerProjects .template {
         margin: 20px 0;
     }
+
     #project .coolGlasses .template .device,
     #project .progettoScorta .template .device,
     #project .toDoList .template .device,

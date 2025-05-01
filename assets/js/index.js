@@ -5,30 +5,33 @@ document.getElementById("toggleMode").addEventListener("click", function () {
 
 // eyes and face movement
 document.addEventListener("mousemove", (event) => {
-    const eyes = document.querySelectorAll(".eye");
-    const faceLight = document.querySelector(".faceLight");
-    const faceNight = document.querySelector(".faceNight");
+  if (window.innerWidth >= 900) { 
+      const eyes = document.querySelectorAll(".eye");
+      const faceLight = document.querySelector(".faceLight");
+      const faceNight = document.querySelector(".faceNight");
 
-    const faceRect = faceLight.getBoundingClientRect();
-    const faceCenterX = faceRect.left + (faceRect.width / 2);
-    const faceCenterY = faceRect.top + (faceRect.height / 2);
+      const faceRect = faceLight.getBoundingClientRect();
+      const faceCenterX = faceRect.left + (faceRect.width / 2);
+      const faceCenterY = faceRect.top + (faceRect.height / 2);
 
-    let mouseX = event.clientX;
-    let mouseY = event.clientY;
+      let mouseX = event.clientX;
+      let mouseY = event.clientY;
 
-    let moveX = (mouseX - faceCenterX) * 0.010;
-    let moveY = (mouseY - faceCenterY) * 0.010;
+      let moveX = (mouseX - faceCenterX) * 0.010;
+      let moveY = (mouseY - faceCenterY) * 0.010;
 
-    let eyeMoveX = moveX * 1.5; 
-    let eyeMoveY = moveY * 1.5;
+      let eyeMoveX = moveX * 1.5; 
+      let eyeMoveY = moveY * 1.5;
 
-    faceLight.style.transform = `translate(${moveX}px, ${moveY}px)`;
-    faceNight.style.transform = `translate(${moveX}px, ${moveY}px)`;
+      faceLight.style.transform = `translate(${moveX}px, ${moveY}px)`;
+      faceNight.style.transform = `translate(${moveX}px, ${moveY}px)`;
 
-    eyes.forEach((eye) => {
-        eye.style.transform = `translate(${eyeMoveX}px, ${eyeMoveY}px)`;
-    });
+      eyes.forEach((eye) => {
+          eye.style.transform = `translate(${eyeMoveX}px, ${eyeMoveY}px)`;
+      });
+  }
 });
+
 
 // Smooth scrolling about me
 window.addEventListener("scroll", function() {
@@ -157,6 +160,23 @@ function sendWhatsApp() {
 
     window.open(whatsappLink, "_blank");
 }
+
+//about appearing:
+document.addEventListener("DOMContentLoaded", () => {
+  const about = document.querySelectorAll(".textAbout");
+
+  const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+          if (entry.intersectionRatio === 1) { // Só ativa quando o elemento está 100% visível
+              entry.target.style.opacity = "1";
+              entry.target.style.transform = "translateY(0)";
+              observer.unobserve(entry.target); // Remove da observação após aparecer
+          }
+      });
+  }, { threshold: 1.0 }); // Exige que o elemento esteja totalmente visível
+
+  about.forEach(project => observer.observe(project));
+});
 
 
 
