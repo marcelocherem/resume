@@ -1231,7 +1231,7 @@ section {
     height: calc(var(--bubble-height));
     animation: floatBubble 5s infinite ease-in-out;
     mix-blend-mode: overlay;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 #skills .bubbleGroup:nth-child(1) .bubble:nth-child(1) {
