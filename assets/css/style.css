@@ -685,10 +685,10 @@ section {
     font-size: 6rem;
 }
 
-#start .text .name h2 {
+#start .text .name span {
     font-size: 6rem;
     color: #211D2E;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 #start .text .jobTitle {
@@ -706,7 +706,7 @@ section {
         margin-top: -15px;
 
         h1,
-        h2 {
+        span {
             font-size: 4rem;
         }
     }
@@ -725,13 +725,13 @@ section {
     #start .text .name {
 
         h1,
-        h2 {
+        span {
             font-size: 3rem;
 
         }
 
-        h2 {
-            margin-left: 10px;
+        span {
+            /* margin-left: 10px; */
         }
     }
 
@@ -754,13 +754,13 @@ section {
         margin-top: -5px;
 
         h1,
-        h2 {
+        span {
             font-size: 2rem;
 
         }
 
-        h2 {
-            margin-left: 10px;
+        span {
+            /* margin-left: 10px; */
         }
     }
 
@@ -786,7 +786,7 @@ section {
     #start .text .name {
 
         h1,
-        h2 {
+        span {
             font-size: 3rem;
         }
     }
@@ -842,7 +842,7 @@ section {
     #start .text .name {
 
         h1,
-        h2 {
+        span {
             font-size: 2rem;
         }
     }
@@ -890,7 +890,7 @@ section {
     #start .text .name {
 
         h1,
-        h2 {
+        span {
             font-size: 1.5rem;
         }
     }
@@ -914,7 +914,7 @@ section {
     #start .text .name {
 
         h1,
-        h2 {
+        span {
             font-size: 1.1rem;
         }
     }
