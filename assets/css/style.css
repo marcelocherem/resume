@@ -967,7 +967,7 @@ section {
 
 #about .img {
     position: absolute;
-    width: 550px;
+    width: 485px;
     height: 830px;
     border-radius: 30px;
     right: 150px;
@@ -1753,6 +1753,9 @@ section {
     width: 212px;
     object-fit: contain;
     object-position: top;
+}
+#project .progettoScorta .template video.traccia-spese {
+    height: 468px;
 }
 
 /* third template */
